@@ -1,0 +1,12 @@
+{
+  "packageDirectories": [
+    {
+      "path": "force-app",
+      "default": true
+    }
+  ],
+  "name": "Uscreen Hooks Service",
+  "namespace": "",
+  "sfdcLoginUrl": "https://wccm2--partialcop.sandbox.lightning.force.com",
+  "sourceApiVersion": "55.0"
+}
