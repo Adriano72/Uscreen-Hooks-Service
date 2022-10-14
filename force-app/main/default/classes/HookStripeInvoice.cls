@@ -31,6 +31,18 @@ global class HookStripeInvoice {
 
         insert newSubscription;
 
+        response.statusCode = 200;
+        response.responseBody = Blob.valueOf(JSON.serialize(new SFDCResponse('Success', 'Processed Succesfully')));
+
+    }
+
+    public class SFDCResponse {
+        String response;
+        String message;
+        public SFDCResponse(String resp, String msg) {
+            response = resp;
+            message = msg;
+        }
     }
 }
 

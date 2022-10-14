@@ -86,8 +86,8 @@ global class UscreenWebHooksService {
                             UscreenHookOrderPaid OrderPaidObjClass = UscreenHookOrderPaid.parse(bB.toString());
                             messaggio = bB.toString();
                             evento_ricevuto = 'order_paid';
-                            userEmail = 'Caro diario' ;//OrderPaidObjClass.customer_email;
-                            userLastName = 'Barzellini'; //OrderPaidObjClass.customer_name;
+                            userEmail = OrderPaidObjClass.customer_email;
+                            userLastName = OrderPaidObjClass.customer_name;
                         }
                         when else {
                             evento_ricevuto = evento;
